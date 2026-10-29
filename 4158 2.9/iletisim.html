@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+</head>
+<body>
+    <header>
+        <h1>İletişim</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a> |
+            <a href="hakkimda.html">Hakkımda</a> |
+            <a href="hobiler.html">Hobilerim</a> |
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bana Mesaj Gönder</h2>
+
+            <form>
+                <label for="ad">Ad:</label>
+                <input type="text" id="ad" name="ad"
+                    required minlength="2"
+                    pattern="[A-Za-zÇĞİÖŞÜçğıöşü ]+"
+                    title="Adınızı harflerle yazın.">
+                <br><br>
+
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="konu">Konu:</label>
+                <select id="konu" name="konu">
+                    <option value="bilgi">Bilgi</option>
+                    <option value="onerı">Öneri</option>
+                    <option value="diger">Diğer</option>
+                </select>
+                <br><br>
+
+                <label for="mesaj">Mesaj:</label>
+                <textarea id="mesaj" name="mesaj"
+                    required maxlength="500"></textarea>
+                <br><br>
+
+                <p>Beni nereden buldunuz?</p>
+
+                <input type="radio" id="arama" name="kaynak" value="arama">
+                <label for="arama">Arama motoru</label>
+
+                <input type="radio" id="arkadas" name="kaynak" value="arkadas">
+                <label for="arkadas">Arkadaş</label>
+
+                <input type="radio" id="diger" name="kaynak" value="diger">
+                <label for="diger">Diğer</label>
+                <br><br>
+
+                <label for="tarih">Mesaj tarihi:</label>
+                <input type="date" id="tarih" name="tarih">
+                <br><br>
+
+                <label for="puan">Siteye kaç puan verirsiniz? (1-10)</label>
+                <input type="number" id="puan" name="puan" min="1" max="10">
+                <br><br>
+
+                <label for="site">İnternet siteniz (isteğe bağlı):</label>
+                <input type="url" id="site" name="site">
+                <br><br>
+
+                <button type="submit">Gönder</button>
+                <button type="reset">Temizle</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kişisel Sitem - 2026</p>
+    </footer>
+</body>
+</html>
